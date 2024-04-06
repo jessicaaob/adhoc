@@ -43,3 +43,20 @@ throwing a "NameError: name 'objc' is not defined" error
 OUTCOME
 
  -Didn't get wav file to work, moved to Google text to speech module.
+
+ ---------------------------------------------------------------------------------------
+4 - Learnings
+---------------------------------------------------------------------------------------
+
+- Don't name your python script the name of a module/ package you are calling
+    for example, I was testing using the gTTS package and named the python script gtts.py.
+    Got an error: "circular import issue in your code"
+
+- Packages can get updated and functions can be depreciated and replaced. 
+    Sometimes the error message will tell you exactly what to change
+
+- Some packages can become incompatible with your operating system if your system has 
+    upgraded since the package was made. e.g., pyttsx3 and MacOS 14
+
+- If the type of file you're trying to output/ save isn't working, try another similar type
+    of file, e.g., replace mp3 for wav
