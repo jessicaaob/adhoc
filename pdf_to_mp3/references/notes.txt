@@ -1,0 +1,45 @@
+---------------------------------------------------------------------------------------
+1 - VS CODE / VENV
+---------------------------------------------------------------------------------------
+ctrl + ` to open terminal
+has the same environment in the prompt as the venv created in warp/ mac os terminal
+
+
+Another way to set up venv could be:
+    - open a new folder in vs CODE
+    - open terminal
+    - check version of python 
+        python3 --version (note: check if just 'python' works)
+        python3 -m venv .venv
+        source .venv/bin/activate
+And .venv should be activated inside the folder
+
+For installing packages then:
+    python3 -m pip install <package>
+
+---------------------------------------------------------------------------------------
+2 - Packages Used
+---------------------------------------------------------------------------------------
+
+pyttsx3 - mpdule that is a text to speech conversion library in python
+PyPDF2 - pythion library used for performing major tasks on PDF files, even books
+
+---------------------------------------------------------------------------------------
+3 - Working Notes and Outcomes
+---------------------------------------------------------------------------------------
+taken from https://www.youtube.com/watch?v=LXsdt6RMNfY
+
+1 - "PdfFileReader" was depreciated, replaced with "PdfReader"
+
+2 - "pdfreader.numPages" was depreciated, replaced with "len(pdfreader.pages)""
+
+3 - pip install pyobjc==9.0.1 was required as the lastest mac operating system isn't compatible with pyttsx3 and was 
+throwing a "NameError: name 'objc' is not defined" error
+
+4 - mp3 file saving not working with pyttsx3, wav files were outputting and saving, but only 4mb files. Empty files. 
+
+5 - Tried setting further parameters to the wav file and re-saving it, but still no joy
+
+OUTCOME
+
+ -Didn't get wav file to work, moved to Google text to speech module.
